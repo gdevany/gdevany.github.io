@@ -39,7 +39,7 @@ a {
 }
 
 .wplogo {
-  width: 60%;
+  width: 40%;
   height: auto;
   opacity: 0.3;
   border-radius: 25%;
@@ -84,13 +84,14 @@ a {
 .sec3 {
   height: 500px;
   width:100%;
+  padding: 0 40px;
 }
 
 .sec4 {
-  background: url("./img/wine13.jpg") no-repeat center;
+  background: url("pics/poolpic2.jpg") no-repeat center bottom;
   background-size: cover;
   width: 100%;
-  height: 700px;
+  height: 500px;
 }
 
 .sec5 {
@@ -145,9 +146,16 @@ a {
   overflow: hidden;
 }
 
+.card {
+  background: rgb(19, 19, 19);
+  padding-top: 20px;
+  border-radius: 25%;
+  margin: 5px 0 5px 0;
+}
+
 .card-img-top {
-  height: auto;
-  width: 200px;
+  height: 220px;
+  width: 220px;
   align-self: center;
 }
 
@@ -166,6 +174,14 @@ a {
 
 .white {
   color: white;
+}
+
+.black {
+  color: black;
+}
+
+.shadow {
+  text-shadow: 5px 5px 5px black;
 }
 
 /*.transp {
