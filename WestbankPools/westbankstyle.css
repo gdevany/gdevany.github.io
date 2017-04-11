@@ -22,6 +22,10 @@ body {
   border-left: solid rgba(255, 255, 255, 0.2) 1px;
 }
 
+.padit {
+  padding: 0 10px 30px 10px;
+}
+
 a {
   color: white;
 }
@@ -30,27 +34,29 @@ a {
   width: 130px;
   height: auto;
   display: inline-block;
-  opacity: 0.6;
+  opacity: 1;
+  border-radius: 25%;
 }
 
-.flogo {
+.wplogo {
   width: 60%;
   height: auto;
-  padding-top: 40px;
-  opacity: 0.1;
+  opacity: 0.3;
+  border-radius: 25%;
 }
-
-/*.seethru {
-  background: rgba(0, 132, 255, 0.3);
-  background-size: cover;
-}*/
 
 .filter {
   height: 100%;
   width: 100%;
+  background: rgba(19, 19, 19, 0.3);
+  background-size: cover;
+}
+
+.filter2 {
+  /*height: 100%;*/
+  width: 100%;
   background: rgba(19, 19, 19, 0.5);
   background-size: cover;
-  /*opacity: 0.5;*/
 }
 
 .flogo {
@@ -65,10 +71,11 @@ a {
   background-size: cover;
   width: 100%;
   height: 685px;
+  /*border-radius: 25%;*/
 }
 
 .sec2 {
-  background: url("./img/wine16.jpg") no-repeat center;
+  background: url("pics/poolpic22.jpg") no-repeat center;
   background-size: cover;
   height: 500px;
   width: 100%;
@@ -161,9 +168,9 @@ a {
   color: white;
 }
 
-.transp {
+/*.transp {
   background-color: transparent;
-}
+}*/
 
 input {
   background: #292929;
