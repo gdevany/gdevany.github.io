@@ -43,13 +43,13 @@ a {
 }
 
 .wplogo {
-  width: 30%;
+  width: 20%;
   height: auto;
   opacity: 0.3;
   border-radius: 25%;
   position:fixed;
-  top: 80px;
-  right: 50px;
+  top: 520px;
+  right: 20px;
 }
 
 .filter {
