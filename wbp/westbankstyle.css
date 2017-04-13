@@ -27,14 +27,14 @@ body {
 }
 
 .padit {
-  padding: 0 10px 30px 10px;
+  padding: 0 10px 50px 10px;
 }
 
 a {
   color: white;
 }
 
-.logo {
+.logomini {
   width: 130px;
   height: auto;
   display: inline-block;
@@ -43,10 +43,13 @@ a {
 }
 
 .wplogo {
-  width: 40%;
+  width: 30%;
   height: auto;
   opacity: 0.3;
   border-radius: 25%;
+  position:fixed;
+  top: 80px;
+  right: 50px;
 }
 
 .filter {
@@ -117,7 +120,7 @@ a {
 }
 
 .sec7 {
-  background: url("./img/wine15.jpg") no-repeat center;
+  background: url("pics/poolpic19.jpg") no-repeat center;
   background-size: cover;
   height: 600px;
   width: 100%;
@@ -153,8 +156,8 @@ a {
 .card {
   background: rgb(19, 19, 19);
   padding-top: 20px;
-  border-radius: 25%;
-  margin: 5px 0 5px 0;
+  border-radius: 15%;
+  margin: 10px 0 10px 0;
 }
 
 .card-img-top {
