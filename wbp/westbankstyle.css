@@ -13,13 +13,14 @@ h5 {
 }
 
 .navbar {
-  border-bottom: solid rgba(255, 255, 255, 0.2) 1px;
+  border-bottom: solid rgba(255, 255, 255, 0.9) 1px;
   font-size: 11px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar-toggler {
   border: solid white 1px;
+  margin-top: 0.25rem;
 }
 
 .navbar-toggler-icon {
@@ -28,6 +29,11 @@ h5 {
 
 .navborderleft {
   border-left: solid rgba(255, 255, 255, 0.2) 1px;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
 }
 
 .padit {
@@ -51,20 +57,19 @@ a {
   height: auto;
   opacity: 0.3;
   border-radius: 25%;
-  position:fixed;
+  /*position:fixed;*/
   top: 520px;
   right: 20px;
 }
 
 .filter {
   height: 100%;
-  width: 100%;
+  /*width: 100%;*/
   background: rgba(19, 19, 19, 0.3);
   background-size: cover;
 }
 
 .filter2 {
-  /*height: 100%;*/
   width: 100%;
   background: rgba(19, 19, 19, 0.5);
   background-size: cover;
@@ -202,15 +207,15 @@ a {
   margin: 10px;
   border: 3px solid black;
 }
+
 .row {
   margin-right: 0;
   margin-left: 0;
 }
 
 .container {
-  margin-left: 0;
-  margin-right: 0;
   padding: 0;
+  width: 100%;
 }
 
 .overflows {
@@ -254,10 +259,6 @@ a {
 .shadow {
   text-shadow: 5px 5px 5px black;
 }
-
-/*.transp {
-  background-color: transparent;
-}*/
 
 input {
   background: #292929;
