@@ -160,19 +160,19 @@ a {
 
 .carousel {
   padding-top: 5em;
-  max-width: 90vw;
+  max-width: 95vw;
 }
 
 .carousel-item {
     height: 15em;
     border: 1px solid black;
-    min-height: 60vh;
-    min-width: 60vw;
-    background: center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    min-height: 50vh;
+    /*min-width: 60vw;*/
+    /*background: center center scroll;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
 }
 
 .tnpic {
