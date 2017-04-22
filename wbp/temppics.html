@@ -6,14 +6,16 @@
     <title>temppic page</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+    <!-- <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script> -->
+    <link href="https://unpkg.com/nanogallery2@1.2.1/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2@1.2.1/dist/jquery.nanogallery2.min.js"></script>
 
   </head>
 
   <body>
 
-      <div id="nanogallery2" data-nanogallery2='{
+      <!-- <div id="nanogallery2" data-nanogallery2='{
           "thumbnailHeight": 100, "thumbnailWidth": 100,
           "thumbnailL1GutterWidth": 5,
           "thumbnailL1GutterHeight": 5,
@@ -23,12 +25,35 @@
           "thumbnailStacksRotateX": 0.9,
           "galleryBuildInit2": "perspective_12000px|perspective-origin_50% 150%",
           "thumbnailHoverEffect2": "thumbnail_translateZ_0px_100px_easeOutQuad_400 | thumbnail_rotateX_0deg_10deg_easeOutBack_200 | thumbnail_rotateX_10deg_0deg_delay250_keyframe_hoverin_easeOutBack_400"
-        }'>
-        <a href="poolpic1.jpg" data-ngthumb="poolpic1.jpg">poolpic1</a>
-        <a href="poolpic2.jpg" data-ngthumb="poolpic2.jpg">poolpic2</a>
-        <a href="poolpic3.jpg" data-ngthumb="poolpic3.jpg">poolpic3</a>
-        <a href="poolpic4.jpg" data-ngthumb="poolpic4.jpg">poolpic4</a>
-        <a href="poolpic5.jpg" data-ngthumb="poolpic5.jpg">poolpic5</a>
+        }'> -->
+
+      <!-- <div id="nanogallery2" data-nanogallery2='{
+        "thumbnailHeight": 100, "thumbnailWidth": 100,
+        "thumbnailL1GutterWidth": 5,
+        "thumbnailL1GutterHeight": 5,
+        "itemsBaseURL": "./pics/",
+        "thumbnailStacksRotateZ": 0.4,
+        "thumbnailBuildInit2": "title_translateY_10px",
+        "galleryBuildInit2": "perspective_1000px",
+        "thumbnailHoverEffect2": "thumbnail_rotateY_0deg_30deg_easeOutQuad_150_hoverin|thumbnail_rotateY_30deg_-30deg_delay160_keyframe_hoverin_easeOutQuad_200|thumbnail_rotateY_-30deg_0deg_delay320_keyframe_hoverin_easeOutQuad_150|title_translateX_0px_20px_easeOutQuad_150_hoverin|title_translateX_20px_-20px_delay160_keyframe_hoverin_easeOutQuad_200|title_translateX_-20px_0px_delay320_keyframe_hoverin_easeOutQuad_150|description_translateX_0px_12px_easeOutQuad_150_hoverin|description_translateX_12px_-12px_delay160_keyframe_hoverin_easeOutQuad_200|description_translateX_-12px_0px_delay320_keyframe_hoverin_easeOutQuad_150"
+      }'> -->
+
+      <div id="nanogallery2" data-nanogallery2='{
+              "thumbnailHeight": 100, "thumbnailWidth": 100,
+              "thumbnailL1GutterWidth": 5,
+              "thumbnailL1GutterHeight": 5,
+              "itemsBaseURL": "./pics/",
+              "thumbnailStacksRotateZ": 0.4,
+              "thumbnailStacksRotateZ": 0.4,
+              "galleryBuildInit2": "perspective-origin_50% 150%",
+              "thumbnailHoverEffect2": "image_rotateZ_0deg_7deg_easeOutQuad_150_hoverin|image_rotateZ_7deg_-7deg_delay160_keyframe_hoverin_easeOutQuad_200|image_rotateZ_-7deg_0deg_delay320_keyframe_hoverin_easeOutQuad_150"
+      }'>
+
+        <a href="poolpic1.jpg" data-ngthumb="poolpic1.jpg" data-ngdescription="Pool 1">poolpic1</a>
+        <a href="poolpic2.jpg" data-ngthumb="poolpic2.jpg" data-ngdescription="Pool 2">poolpic2</a>
+        <a href="poolpic3.jpg" data-ngthumb="poolpic3.jpg" data-ngdescription="Pool 3">poolpic3</a>
+        <a href="poolpic4.jpg" data-ngthumb="poolpic4.jpg" data-ngdescription="Pool 4">poolpic4</a>
+        <a href="poolpic5.jpg" data-ngthumb="poolpic5.jpg" data-ngdescription="Pool 5">poolpic5</a>
         <a href="poolpic6.jpg" data-ngthumb="poolpic6.jpg">poolpic6</a>
         <a href="poolpic7.jpg" data-ngthumb="poolpic7.jpg">poolpic7</a>
         <a href="poolpic8.jpg" data-ngthumb="poolpic8.jpg">poolpic8</a>
