@@ -152,21 +152,25 @@ a {
 }
 
 .backdrop {
-  /*background: url("./pics/wbpwaterbackground.jpg") no-repeat top center;*/
-  background: blue;
+  background: url("./pics/wbpwaterbackground.jpg") no-repeat top center;
+  /*background: blue;*/
   background-size: cover;
   width: 100%;
 }
 
-.carousel {
+.navpad {
   padding-top: 5em;
-  max-width: 95vw;
+}
+
+.carousel {
+  /*max-width: 95vw;*/
+  width: 400px;
 }
 
 .carousel-item {
     height: 15em;
     border: 1px solid black;
-    min-height: 50vh;
+    min-height: 40vh;
     /*min-width: 60vw;*/
     /*background: center center scroll;*/
     /*-webkit-background-size: cover;*/

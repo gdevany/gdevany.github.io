@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Westbank Pools Portfolio</title>
     <!-- Bootstrap CSS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/nanogallery2@1.2.1/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2@1.2.1/dist/jquery.nanogallery2.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="westbankstyle.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -45,8 +48,8 @@
                 PORTFOLIO
               </a>
               <div class="dropdown-menu" aria-labelledby="portfoliodropdown">
-                <a class="dropdown-item" href="portfolio.html">NEW CONSTRUCTION</a>
-                <a class="dropdown-item" href="temppics.html">REMODELING</a>
+                <a class="dropdown-item" href="newconstructionpics.html">NEW CONSTRUCTION</a>
+                <a class="dropdown-item" href="remodelpics.html">REMODELING</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -82,7 +85,7 @@
         </div>
       </nav>
       <div class="row justify-content-center">
-        <div id="carouselwbp" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div id="carouselwbp" class="carousel navpad slide" data-ride="carousel" data-interval="3000">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <img class="d-block img-fluid" src="pics/poolpic1.jpg" alt="Pic1">
@@ -200,46 +203,61 @@
           </a>
         </div>
       </div>
-      <div class="d-flex flex-wrap justify-content-around">
-        <img src="pics/poolpic1.jpg" class="tnpic" alt="poolpic1 thumbnail">
-        <img src="pics/poolpic2.jpg" class="tnpic" alt="poolpic2 thumbnail">
-        <img src="pics/poolpic3.jpg" class="tnpic" alt="poolpic3 thumbnail">
-        <img src="pics/poolpic4.jpg" class="tnpic" alt="poolpic4 thumbnail">
-        <img src="pics/poolpic5.jpg" class="tnpic" alt="poolpic5 thumbnail">
-        <img src="pics/poolpic6.jpg" class="tnpic" alt="poolpic6 thumbnail">
-        <img src="pics/poolpic7.jpg" class="tnpic" alt="poolpic7 thumbnail">
-        <img src="pics/poolpic8.jpg" class="tnpic" alt="poolpic8 thumbnail">
-        <img src="pics/poolpic9.jpg" class="tnpic" alt="poolpic9 thumbnail">
-        <img src="pics/poolpic10.jpg" class="tnpic" alt="poolpic10 thumbnail">
-        <img src="pics/poolpic11.jpg" class="tnpic" alt="poolpic11 thumbnail">
-        <img src="pics/poolpic12.jpg" class="tnpic" alt="poolpic12 thumbnail">
-        <img src="pics/poolpic13.jpg" class="tnpic" alt="poolpic13 thumbnail">
-        <img src="pics/poolpic14.jpg" class="tnpic" alt="poolpic14 thumbnail">
-        <img src="pics/poolpic15.jpg" class="tnpic" alt="poolpic15 thumbnail">
-        <img src="pics/poolpic16.jpg" class="tnpic" alt="poolpic16 thumbnail">
-        <img src="pics/poolpic17.jpg" class="tnpic" alt="poolpic17 thumbnail">
-        <img src="pics/poolpic18.jpg" class="tnpic" alt="poolpic18 thumbnail">
-        <img src="pics/poolpic19.jpg" class="tnpic" alt="poolpic19 thumbnail">
-        <img src="pics/poolpic20.jpg" class="tnpic" alt="poolpic20 thumbnail">
-        <img src="pics/poolpic21.jpg" class="tnpic" alt="poolpic21 thumbnail">
-        <img src="pics/poolpic22.jpg" class="tnpic" alt="poolpic22 thumbnail">
-        <img src="pics/poolpic23.jpg" class="tnpic" alt="poolpic23 thumbnail">
-        <img src="pics/poolpic24.jpg" class="tnpic" alt="poolpic24 thumbnail">
-        <img src="pics/poolpic25.jpg" class="tnpic" alt="poolpic25 thumbnail">
-        <img src="pics/poolpic26.jpg" class="tnpic" alt="poolpic26 thumbnail">
-        <img src="pics/poolpic27.jpg" class="tnpic" alt="poolpic27 thumbnail">
-        <img src="pics/poolpic28.jpg" class="tnpic" alt="poolpic28 thumbnail">
-        <img src="pics/poolpic29.jpg" class="tnpic" alt="poolpic29 thumbnail">
-        <img src="pics/poolpic32.jpg" class="tnpic" alt="poolpic32 thumbnail">
-        <img src="pics/poolpic33.jpg" class="tnpic" alt="poolpic33 thumbnail">
-        <img src="pics/poolpic40.jpg" class="tnpic" alt="poolpic40 thumbnail">
-        <img src="pics/poolpic41.jpg" class="tnpic" alt="poolpic41 thumbnail">
-        <img src="pics/poolpic42.jpg" class="tnpic" alt="poolpic42 thumbnail">
-        <img src="pics/poolpic43.jpg" class="tnpic" alt="poolpic43 thumbnail">
-      </div>
     </div>
+    <div id="nanogallery2" class="backdrop" data-nanogallery2='{
+            "thumbnailHeight": 100, "thumbnailWidth": 100,
+            "thumbnailL1GutterWidth": 8,
+            "thumbnailL1GutterHeight": 8,
+            "itemsBaseURL": "./pics/",
+            "thumbnailStacksRotateZ": 0.4,
+            "thumbnailStacksRotateZ": 0.4,
+            "galleryBuildInit2": "perspective-origin_50% 150%",
+            "thumbnailHoverEffect2": "image_rotateZ_0deg_7deg_easeOutQuad_150_hoverin|image_rotateZ_7deg_-7deg_delay160_keyframe_hoverin_easeOutQuad_200|image_rotateZ_-7deg_0deg_delay320_keyframe_hoverin_easeOutQuad_150"
+    }'>
+
+      <a href="poolpic1.jpg" data-ngthumb="poolpic1.jpg" data-ngdescription="Pool 1">poolpic1</a>
+      <a href="poolpic2.jpg" data-ngthumb="poolpic2.jpg" data-ngdescription="Pool 2">poolpic2</a>
+      <a href="poolpic3.jpg" data-ngthumb="poolpic3.jpg" data-ngdescription="Pool 3">poolpic3</a>
+      <a href="poolpic4.jpg" data-ngthumb="poolpic4.jpg" data-ngdescription="Pool 4">poolpic4</a>
+      <a href="poolpic5.jpg" data-ngthumb="poolpic5.jpg" data-ngdescription="Pool 5">poolpic5</a>
+      <a href="poolpic6.jpg" data-ngthumb="poolpic6.jpg">poolpic6</a>
+      <a href="poolpic7.jpg" data-ngthumb="poolpic7.jpg">poolpic7</a>
+      <a href="poolpic8.jpg" data-ngthumb="poolpic8.jpg">poolpic8</a>
+      <a href="poolpic9.jpg" data-ngthumb="poolpic9.jpg">poolpic9</a>
+      <a href="poolpic10.jpg" data-ngthumb="poolpic10.jpg">poolpic10</a>
+      <a href="poolpic11.jpg" data-ngthumb="poolpic11.jpg">poolpic11</a>
+      <a href="poolpic12.jpg" data-ngthumb="poolpic12.jpg">poolpic12</a>
+      <a href="poolpic13.jpg" data-ngthumb="poolpic13.jpg">poolpic13</a>
+      <a href="poolpic14.jpg" data-ngthumb="poolpic14.jpg">poolpic14</a>
+      <a href="poolpic15.jpg" data-ngthumb="poolpic15.jpg">poolpic15</a>
+      <a href="poolpic16.jpg" data-ngthumb="poolpic16.jpg">poolpic16</a>
+      <a href="poolpic17.jpg" data-ngthumb="poolpic17.jpg">poolpic17</a>
+      <a href="poolpic18.jpg" data-ngthumb="poolpic18.jpg">poolpic18</a>
+      <a href="poolpic19.jpg" data-ngthumb="poolpic19.jpg">poolpic19</a>
+      <a href="poolpic20.jpg" data-ngthumb="poolpic20.jpg">poolpic20</a>
+      <a href="poolpic21.jpg" data-ngthumb="poolpic21.jpg">poolpic21</a>
+      <a href="poolpic22.jpg" data-ngthumb="poolpic22.jpg">poolpic22</a>
+      <a href="poolpic23.jpg" data-ngthumb="poolpic23.jpg">poolpic23</a>
+      <a href="poolpic24.jpg" data-ngthumb="poolpic24.jpg">poolpic24</a>
+      <a href="poolpic25.jpg" data-ngthumb="poolpic25.jpg">poolpic25</a>
+      <a href="poolpic26.jpg" data-ngthumb="poolpic26.jpg">poolpic26</a>
+      <a href="poolpic27.jpg" data-ngthumb="poolpic27.jpg">poolpic27</a>
+      <a href="poolpic28.jpg" data-ngthumb="poolpic28.jpg">poolpic28</a>
+      <a href="poolpic29.jpg" data-ngthumb="poolpic29.jpg">poolpic29</a>
+      <!-- <a href="poolpic30.jpg" data-ngthumb="poolpic30.jpg">poolpic30.jpg</a> -->
+      <!-- <a href="poolpic31.jpg" data-ngthumb="poolpic31.jpg">poolpic31.jpg</a> -->
+      <a href="poolpic32.jpg" data-ngthumb="poolpic32.jpg">poolpic32</a>
+      <a href="poolpic33.jpg" data-ngthumb="poolpic33.jpg">poolpic33</a>
+      <!-- <a href="poolpic39.jpg" data-ngthumb="poolpic39.jpg">poolpic39</a> -->
+      <a href="poolpic40.jpg" data-ngthumb="poolpic40.jpg">poolpic40</a>
+      <a href="poolpic41.jpg" data-ngthumb="poolpic41.jpg">poolpic41</a>
+      <a href="poolpic42.jpg" data-ngthumb="poolpic42.jpg">poolpic42</a>
+      <a href="poolpic43.jpg" data-ngthumb="poolpic43.jpg">poolpic43</a>
+
+    </div>
+    <h5 class="backdrop">gallery made with nanogallery2</h5>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script type="text/javascript" src="wbpjs.js"></script>
