@@ -29,8 +29,8 @@ body {
 }
 
 .navborder {
-  border-bottom: solid rgba(128, 128, 128, 0.1) 1px;
-  border-style: ridge;
+  /*border-bottom: solid rgba(128, 128, 128, 0.1) 1px;*/
+  /*border-style: ridge;*/
 }
 
 .navbar-brand {
