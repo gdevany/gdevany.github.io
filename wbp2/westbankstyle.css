@@ -1,0 +1,202 @@
+body {
+  /*font-family: georgia;*/
+  font-family: Varela Round,arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h5 {
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.itally {
+  font-style: italic;
+}
+
+.navbar {
+  /*border-bottom: solid rgba(255, 255, 255, 0.9) 1px;*/
+  font-size: 15px;
+  font-family: 'Special Elite';
+  /*font-family: 'PT Mono';*/
+
+}
+
+.navbar-toggler {
+  border: solid grey 1px;
+  margin-top: 0.25rem;
+}
+
+.navbar-toggler-icon {
+  padding-top: 5px;
+}
+
+.navborderleft {
+  border-left: solid rgba(255, 255, 255, 0.2) 1px;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.navpad {
+  padding-top: 5em;
+}
+
+.padit {
+  padding: 0 10px 50px 10px;
+}
+
+a {
+  color: grey;
+}
+
+.logoinit {
+  background: url("./pics/WPlogo.png") no-repeat center;
+  width: 75%;
+  height: 75%;
+  background-size: contain;
+}
+
+.projbox {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin-top: 50px;
+}
+
+/*.filter {
+  height: 100%;
+  background: rgba(19, 19, 19, 0.3);
+  background-size: cover;
+}*/
+
+.imgsize1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.sec1 {
+  padding-top: 100px;
+  width: 100%;
+  height: 350px;
+}
+
+.sec2 {
+  margin-top: 40px;
+}
+
+.carousel {
+  /*max-width: 95vw;*/
+  width: 400px;
+  padding-bottom: 5px;
+}
+
+.carousel-item {
+    height: 15em;
+    border: 3px solid black;
+    min-height: 40vh;
+}
+
+.nGY2ConsoleParent {
+  margin: 0;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+.overflows {
+  overflow: hidden;
+}
+
+.card {
+  background: rgb(19, 19, 19);
+  padding-top: 20px;
+  border-radius: 15%;
+  margin: 10px 0 10px 0;
+}
+
+.card-img-top {
+  height: 220px;
+  width: 220px;
+  align-self: center;
+}
+
+.sigpic {
+  width: 25%;
+  height: auto;
+  align-self: center;
+}
+
+.awardpic {
+  width: 85%;
+  height: auto;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.grey {
+  color: grey;
+}
+
+.shadow {
+  text-shadow: 5px 5px 5px black;
+}
+
+input {
+  background: #292929;
+  height: 60px;
+  width: 100%;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  border: solid white 1px;
+  font-weight: bold;
+}
+
+.emailbutton {
+  height: 60px;
+  width: 100%;
+  background: #91a05c;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.no-gutter.row,
+.no-gutter.container,
+.no-gutter.container-fluid{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.no-gutter>[class^="col-"]{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+li {
+  padding-left: 30px;
+}
+
+.fade-half {
+  opacity: 0.5;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
