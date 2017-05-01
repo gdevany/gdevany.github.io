@@ -22,8 +22,8 @@ h5 {
 }
 
 .navbar-toggler {
-  border: solid grey 1px;
-  margin-top: 0.25rem;
+  /*border: solid grey 1px;*/
+  /*margin-top: 0.25rem;*/
 }
 
 .navbar-toggler-icon {
@@ -59,9 +59,25 @@ a {
 }
 
 .projbox {
-  width: 200px;
+  width: 300px;
   height: 200px;
+  /*padding: 50px;*/
   border: 1px solid black;
+  background-size: 100% 100%;
+  margin-top: 100px;
+}
+
+.projbox1 {
+  background: url('./pics/poolpic1.jpg') no-repeat center;
+  margin-top: 2px;
+}
+
+.projbox2 {
+  background: url('./pics/poolpic2.jpg') no-repeat center;
+}
+
+.projbox3 {
+  background: url('./pics/poolpic3.jpg') no-repeat center;
 }
 
 /*.filter {
