@@ -1,7 +1,5 @@
 body {
-  /*font-family: georgia;*/
-  /*font-family: 'Special Elite';*/
-  /*-webkit-font-smoothing: antialiased;*/
+
 }
 
 .sefont {
@@ -10,11 +8,6 @@ body {
 
 .ptfont {
   font-family: 'PT Mono';
-}
-
-h5 {
-  padding-bottom: 10px;
-  margin-bottom: 0;
 }
 
 .itally {
@@ -47,10 +40,6 @@ h5 {
 
 .navpad {
   padding-top: 5em;
-}
-
-.padit {
-  padding: 0 10px 50px 10px;
 }
 
 a {
@@ -136,22 +125,6 @@ a {
   margin-top: 40px;
 }
 
-.carousel {
-  /*max-width: 95vw;*/
-  width: 400px;
-  padding-bottom: 5px;
-}
-
-.carousel-item {
-    height: 15em;
-    border: 3px solid black;
-    min-height: 40vh;
-}
-
-.nGY2ConsoleParent {
-  margin: 0;
-}
-
 .row {
   margin-right: 0;
   margin-left: 0;
@@ -199,18 +172,6 @@ input {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
-}
-
-.no-gutter.row,
-.no-gutter.container,
-.no-gutter.container-fluid{
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.no-gutter>[class^="col-"]{
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 li {
