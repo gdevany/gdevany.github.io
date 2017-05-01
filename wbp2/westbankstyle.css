@@ -105,19 +105,34 @@ a {
   background-size: cover;
 }
 
+.projbox7 {
+  background: url('./pics/poolpic14.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.projbox8 {
+  background: url('./pics/poolpic15.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.projbox9 {
+  background: url('./pics/poolpic16.jpg') no-repeat center;
+  background-size: cover;
+}
+
 /*.filter {
   height: 100%;
   background: rgba(19, 19, 19, 0.3);
   background-size: cover;
 }*/
 
-.sec1 {
+.seclogo {
   /*padding-top: 100px;*/
   width: 100%;
   height: 150px;
 }
 
-.sec2 {
+.secportfolio {
   margin-top: 40px;
 }
 
