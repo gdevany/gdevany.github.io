@@ -54,10 +54,8 @@ a {
 }
 
 .projbox {
-  width: 300px;
-  height: 200px;
-  /*padding: 50px;*/
-  /*border: 1px solid black;*/
+  width: 275px;
+  height: 220px;
   background-size: 100% 100%;
   margin-top: 10px;
   color: black;
