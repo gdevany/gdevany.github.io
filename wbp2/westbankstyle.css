@@ -155,25 +155,6 @@ a {
   text-shadow: 5px 5px 5px black;
 }
 
-input {
-  background: #292929;
-  height: 60px;
-  width: 100%;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  border: solid white 1px;
-  font-weight: bold;
-}
-
-.emailbutton {
-  height: 60px;
-  width: 100%;
-  background: #91a05c;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-}
-
 li {
   padding-left: 30px;
 }
@@ -182,10 +163,18 @@ li {
   opacity: 0.5;
 }
 
+.fade-none {
+  opacity: 1.0;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
 
 .align-self-middle {
   margin-right: 150px;
+}
+
+.hideit {
+  display: none;
 }

@@ -25,43 +25,37 @@
         <div class="d-flex justify-content-center navborder">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnavdropdown" aria-controls="navbarnavdropdown" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <span class="navbar-toggler-icon grey">&#9776;</span> -->
-            <span class="navbar-toggler-icon grey sefont">menu</span>
-
+            <span class="navbar-toggler-icon grey sefont fade-half">menu</span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarnavdropdown">
             <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="index.html" aria-haspopup="true" aria-expanded="false">
-                  home
-                </a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link" href="index.html" aria-haspopup="true" aria-expanded="false">
                   portfolio
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link fade-half" href="#" aria-haspopup="true" aria-expanded="false">
                   process
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link fade-half" href="#" aria-haspopup="true" aria-expanded="false">
                   faq's
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link fade-half" href="#" aria-haspopup="true" aria-expanded="false">
                   about
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link fade-half" href="#" aria-haspopup="true" aria-expanded="false">
                   contact
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="forms.html" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link fade-half" href="forms.html" aria-haspopup="true" aria-expanded="false">
                   documents
                 </a>
               </li>
@@ -69,11 +63,25 @@
           </div>
         </div>
       </nav>
+    <!-- Project show if clicked -->
+    <div class="hideit" id="chosenproj">
+      <div class="d-flex text-left projname"></div>
+      <div class="text-left projdesc">
+
+      </div>
+
+    </div>
+
+
     <!-- Portfolio -->
       <!-- Portfolio row1 -->
       <div class="row secportfolio grey">
         <div class="col-sm-12 col-md-4 col-lg-4 d-flex align-items-center flex-column">
-          <div class="projbox projbox1 img-fluid"></div>
+          <div class="projbox projbox1 img-fluid" id="riverside">
+            <div class="projdesc">
+              The owners just gave us a big check and said Make it Good
+            </div>
+          </div>
           <div class="align-self-center">riverside</div>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 d-flex align-items-center flex-column">
@@ -116,5 +124,6 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./wbp2script.js"></script>
   </body>
 </html>
