@@ -6,6 +6,6 @@ $(function() {
     $('#chosenproj').css('display', 'flex');
 
     $('.projname').text(this.id);
-    $('.projdesc').text($(this).children('div'));
+    $('.projdesc').text($(this).parent().children('div'));
   })
 });
