@@ -46,6 +46,10 @@ a {
   color: grey;
 }
 
+.bigger {
+  font-size: 18px;
+}
+
 .logoinit {
   background: url("./pics/WPlogo.png") no-repeat center;
   width: 75%;
@@ -62,49 +66,50 @@ a {
   font-weight: bold;
 }
 
+.projboxit {
+  width: 100%;
+  height: 250px;
+  margin: 5px;
+}
+
+.bgcover {
+  background-size: cover;
+}
+
 .projbox1 {
   background: url('./pics/poolpic1.jpg') no-repeat center;
-  background-size: cover;
 }
 
 .projbox2 {
   background: url('./pics/poolpic2.jpg') no-repeat center;
-  background-size: cover;
 }
 
 .projbox3 {
   background: url('./pics/poolpic10.jpg') no-repeat center;
-  background-size: cover;
 }
 
 .projbox4 {
   background: url('./pics/poolpic11.jpg') no-repeat center;
-  background-size: cover;
 }
 
 .projbox5 {
   background: url('./pics/poolpic12.jpg') no-repeat center;
-  background-size: cover;
 }
 
 .projbox6 {
   background: url('./pics/poolpic13.jpg') no-repeat center;
-  background-size: cover;
 }
 
 .projbox7 {
   background: url('./pics/poolpic14.jpg') no-repeat center;
-  background-size: cover;
 }
 
 .projbox8 {
   background: url('./pics/poolpic15.jpg') no-repeat center;
-  background-size: cover;
 }
 
 .projbox9 {
   background: url('./pics/poolpic16.jpg') no-repeat center;
-  background-size: cover;
 }
 
 /*.filter {
@@ -131,7 +136,7 @@ a {
 .container {
   padding: 0;
   margin-top: 10px;
-  width: 80%;
+  width: 90%;
   /*border: solid rgba(128, 128, 128, 0.2) 2px;*/
 }
 
