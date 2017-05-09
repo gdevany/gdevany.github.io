@@ -73,15 +73,6 @@ a {
   background-size: contain;
 }
 
-/*.projbox {
-  width: 275px;
-  height: 220px;
-  background-size: 100% 100%;
-  margin-top: 30px;
-  color: black;
-  font-weight: bold;
-}*/
-
 .projbox {
   max-width: 100%;
   width: 100%;
@@ -89,7 +80,14 @@ a {
   margin-top: 30px;
   font-weight: bold;
   background-size: cover;
-  border: 1px solid black;
+}
+
+.backdrop {
+  max-width: 100%;
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+  background-size: cover;
 }
 
 .projboxit {
@@ -163,20 +161,19 @@ a {
   height: 150px;
 }
 
-.secportfolio {
+.padtop {
   margin-top: 30px;
 }
 
 .row {
   margin-right: 0;
   margin-left: 0;
-  /*width: 500px;*/
 }
 
 .container {
   padding: 0;
   margin-top: 10px;
-  width: 97%;
+  width: 100%;
   /*border: solid rgba(128, 128, 128, 0.2) 2px;*/
 }
 
