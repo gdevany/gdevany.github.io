@@ -220,3 +220,24 @@ li {
 .hideit {
   display: none;
 }
+
+/*.nGY2 .nGY2GThumbnail, .nGY2 .nGY2GThumbnailStack {
+  position: fixed;
+}*/
+
+.nGY2 .nGY2Gallery {
+  text-align:justify;
+}
+
+.nanogallery_colorscheme_dark_my_nanogallery2 {
+  /*border-radius:25px;*/
+  border: none;
+}
+
+ .nanogallery_colorscheme_dark_my_nanogallery2 .nGY2GThumbnail {
+   border: none;
+ }
+
+#my_nanogallery2 {
+  width: 100%;
+}
