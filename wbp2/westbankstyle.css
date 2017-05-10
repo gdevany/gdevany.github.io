@@ -10,6 +10,26 @@ body {
   font-family: 'PT Mono';
 }
 
+.incfont {
+  font-family: 'Inconsolata', monospace;
+}
+
+.robofont {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.scfont {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.gracefont {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+.comingfont {
+  font-family: 'Coming Soon', cursive;
+}
+
 .somosfont {
   font-family: 'letter-gothic-std';
   /*font-family: 'Varela Round',arial,sans-serif;*/
@@ -63,11 +83,11 @@ a {
 }
 
 .bigger {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .projtitle {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(242, 242, 242, 0.5);
 }
 
