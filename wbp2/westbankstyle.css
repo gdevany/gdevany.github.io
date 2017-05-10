@@ -218,6 +218,10 @@ li {
   opacity: 0.5;
 }
 
+.fade-bold {
+  color: black;
+}
+
 .fade-none {
   opacity: 1.0;
 }
@@ -234,22 +238,7 @@ li {
   display: none;
 }
 
-/*.nGY2 .nGY2GThumbnail, .nGY2 .nGY2GThumbnailStack {
-  position: fixed;
-}*/
-
-/*.nGY2 .nGY2Gallery {
-  text-align:justify;
+.squeeze {
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-.nanogallery_colorscheme_dark_my_nanogallery2 {
-  border: none;
-}
-
- .nanogallery_colorscheme_dark_my_nanogallery2 .nGY2GThumbnail {
-   border: none;
- }
-
-#my_nanogallery2 {
-  width: 100%;
-}*/

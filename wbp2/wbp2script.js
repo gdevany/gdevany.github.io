@@ -34,6 +34,13 @@ $(function() {
         "thumbnailStacksRotateZ": 0.4,
         "thumbnailStacksRotateZ": 0.4,
         "galleryBuildInit2": "perspective-origin_50% 150%",
+  // COOL EFFECTS ON HOVER, ETC:
+        // "thumbnailBuildInit2": 'image_scale_0.9',
+                        // GOOD ONE   |
+                        //           \|/
+        "thumbnailHoverEffect2": "image_scale_1.00_1.20"
+        // ***THIS IS COOL*** "thumbnailHoverEffect2": "image_scale_1.00_1.20"
+        // "thumbnailHoverEffect2": "image_grayscale_0%_100%"
         // "thumbnailHoverEffect2": "image_rotateZ_0deg_7deg_easeOutQuad_150_hoverin|image_rotateZ_7deg_-7deg_delay160_keyframe_hoverin_easeOutQuad_200|image_rotateZ_-7deg_0deg_delay320_keyframe_hoverin_easeOutQuad_150"
 
   // $("#my_nanogallery2").nanogallery2({
