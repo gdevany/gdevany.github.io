@@ -15,21 +15,24 @@ $(function() {
   //     event.preventDefault();
 
 // nGY2GallerySub
-  // $('#my_nanogallery2').nanogallery2();
+  // $('#my_nanogallery2').nanogallery2({"width": 200});
 // 'width': '100px'
-// $('#my_nanogallery2').css('width', 300);
+// $("#my_nanogallery2").css("width", "100%");
 
 
       $("#my_nanogallery2").nanogallery2({
-        "thumbnailHeight": 250, "thumbnailWidth": 300,
-        "thumbnailL1GutterWidth": 8,
-        "thumbnailL1GutterHeight": 58,
+        "thumbnailHeight": 250, "thumbnailWidth": 400,
+        "thumbnailCrop": 0,
+        "thumbnailBorderHorizontal": 0,
+        "thumbnailBorderVertical": 0,
+        "thumbnailL1GutterWidth": 0,
+        "thumbnailL1GutterHeight": 7,
         "itemsBaseURL": "./pics/",
-        // "width": "thumbnailWidth",
+        "colorScheme": "light",
         "thumbnailStacksRotateZ": 0.4,
         "thumbnailStacksRotateZ": 0.4,
         "galleryBuildInit2": "perspective-origin_50% 150%",
-        "thumbnailHoverEffect2": "image_rotateZ_0deg_7deg_easeOutQuad_150_hoverin|image_rotateZ_7deg_-7deg_delay160_keyframe_hoverin_easeOutQuad_200|image_rotateZ_-7deg_0deg_delay320_keyframe_hoverin_easeOutQuad_150"
+        // "thumbnailHoverEffect2": "image_rotateZ_0deg_7deg_easeOutQuad_150_hoverin|image_rotateZ_7deg_-7deg_delay160_keyframe_hoverin_easeOutQuad_200|image_rotateZ_-7deg_0deg_delay320_keyframe_hoverin_easeOutQuad_150"
 
   // $("#my_nanogallery2").nanogallery2({
   //       "thumbnailHeight": 100, "thumbnailWidth": 100,
