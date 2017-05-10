@@ -78,15 +78,6 @@ a {
   background-size: contain;
 }
 
-.projbox {
-  max-width: 100%;
-  width: 100%;
-  height: 200px;
-  margin-top: 30px;
-  font-weight: bold;
-  background-size: cover;
-}
-
 .backdrop {
   max-width: 100%;
   width: 100%;
@@ -107,6 +98,19 @@ a {
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+
+.init {
+  border: 1px solid black;
+}
+
+.projbox {
+  /*max-width: 250px;*/
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+  font-weight: bold;
+  background-size: cover;
 }
 
 .projbox1 {
@@ -154,14 +158,7 @@ a {
   background-size: cover;
 }
 
-/*.filter {
-  height: 100%;
-  background: rgba(19, 19, 19, 0.3);
-  background-size: cover;
-}*/
-
 .seclogo {
-  /*padding-top: 100px;*/
   width: 100%;
   height: 150px;
 }

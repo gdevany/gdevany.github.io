@@ -27,7 +27,7 @@ $(function() {
         "thumbnailBorderHorizontal": 0,
         "thumbnailBorderVertical": 0,
         "thumbnailL1GutterWidth": 0,
-        "thumbnailL1GutterHeight": 7,
+        "thumbnailL1GutterHeight": 40,
         // "thumbnailLabel": { position: 'onBottom' },
         "itemsBaseURL": "./pics/",
         "colorScheme": "light",
