@@ -22,12 +22,13 @@ $(function() {
 
       $("#my_nanogallery2").nanogallery2({
         // "thumbnailHeight": 250, "thumbnailWidth": 400,
-        thumbnailWidth: '350 XS350 SM600 LA350 XL500', thumbnailHeight: '250 XS250 SM400 LA250 XL350',
+        thumbnailWidth: '350 XS350 SM600 LA500 XL500', thumbnailHeight: '250 XS250 SM400 LA350 XL350',
         "thumbnailCrop": 0,
         "thumbnailBorderHorizontal": 0,
         "thumbnailBorderVertical": 0,
         "thumbnailL1GutterWidth": 0,
         "thumbnailL1GutterHeight": 7,
+        // "thumbnailLabel": { position: 'onBottom' },
         "itemsBaseURL": "./pics/",
         "colorScheme": "light",
         "thumbnailStacksRotateZ": 0.4,

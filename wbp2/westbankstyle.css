@@ -66,6 +66,11 @@ a {
   font-size: 28px;
 }
 
+.projtitle {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(242, 242, 242, 0.5);
+}
+
 .logoinit {
   background: url("./pics/WPlogo.png") no-repeat center;
   width: 75%;
@@ -163,6 +168,14 @@ a {
 
 .padtop {
   margin-top: 30px;
+}
+
+.padtop2 {
+  margin-top: 20px;
+}
+
+.padbottom {
+  margin-bottom: 20px;
 }
 
 .row {
