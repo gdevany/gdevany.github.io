@@ -1,5 +1,5 @@
 body {
-
+  background-color: #FDFDFD;
 }
 
 .sefont {
@@ -88,7 +88,7 @@ a {
 
 .projtitle {
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(242, 242, 242, 0.5);
+  border-bottom: 2px solid rgba(242, 242, 242, 1);
 }
 
 .logoinit {
