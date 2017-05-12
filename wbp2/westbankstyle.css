@@ -1,5 +1,22 @@
 body {
   background-color: #FDFDFD;
+  font-size: 12px;
+}
+
+a {
+  color: grey;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container {
+  padding: 0;
+  margin-top: 10px;
+  width: 100%;
+  /*border: solid rgba(128, 128, 128, 0.2) 2px;*/
 }
 
 .sefont {
@@ -30,24 +47,44 @@ body {
   font-family: 'Coming Soon', cursive;
 }
 
-.somosfont {
-  font-family: 'letter-gothic-std';
-  /*font-family: 'Varela Round',arial,sans-serif;*/
-
-      font-size: 13px;
-      line-height: 1.6em;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 1px;
-      text-align: center;
-      font-weight: 400;
-      font-style: normal;
-      color: #545454;
-
-}
-
 .itally {
   font-style: italic;
+}
+
+.bigger {
+  font-size: 20px;
+}
+
+.smaller {
+  font-size: 12px;
+}
+
+.fade-half {
+  opacity: 0.5;
+}
+
+.fade-bold {
+  color: black;
+}
+
+.fade-none {
+  opacity: 1.0;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.grey {
+  color: grey;
+}
+
+.shadow {
+  text-shadow: 5px 5px 5px black;
 }
 
 .navbar {
@@ -78,14 +115,6 @@ body {
   padding-top: 5em;
 }
 
-a {
-  color: grey;
-}
-
-.bigger {
-  font-size: 20px;
-}
-
 .projtitle {
   padding-bottom: 10px;
   border-bottom: 2px solid rgba(242, 242, 242, 1);
@@ -98,21 +127,24 @@ a {
   background-size: contain;
 }
 
+.seclogo {
+  width: 100%;
+  height: 150px;
+}
+
+/*
 .backdrop {
   max-width: 100%;
   width: 100%;
   height: 200px;
   margin-top: 30px;
   background-size: cover;
-}
+}*/
 
-.projboxit {
-  /*width: 100%;*/
-  /*max-width: 300px;*/
+/*.projboxit {
   height: 250px;
   margin-top: 15px;
-  /*background-size: cover;*/
-}
+}*/
 
 .bgcover {
   background-size: cover;
@@ -120,9 +152,9 @@ a {
   height: 100%;
 }
 
-.init {
+/*.init {
   border: 1px solid black;
-}
+}*/
 
 .projbox {
   /*max-width: 250px;*/
@@ -178,9 +210,8 @@ a {
   background-size: cover;
 }
 
-.seclogo {
-  width: 100%;
-  height: 150px;
+.socials {
+  margin: 0 10px;
 }
 
 .padtop {
@@ -195,60 +226,20 @@ a {
   margin-bottom: 20px;
 }
 
-.row {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.container {
-  padding: 0;
-  margin-top: 10px;
-  width: 100%;
-  /*border: solid rgba(128, 128, 128, 0.2) 2px;*/
+.padbottom2 {
+  margin-bottom: 50px;
 }
 
 .overflows {
   overflow: hidden;
 }
 
-.white {
-  color: white;
-}
-
-.black {
-  color: black;
-}
-
-.grey {
-  color: grey;
-}
-
-.shadow {
-  text-shadow: 5px 5px 5px black;
-}
-
 li {
   padding-left: 30px;
 }
 
-.fade-half {
-  opacity: 0.5;
-}
-
-.fade-bold {
-  color: black;
-}
-
-.fade-none {
-  opacity: 1.0;
-}
-
 .uppercase {
   text-transform: uppercase;
-}
-
-.align-self-middle {
-  margin-right: 150px;
 }
 
 .hideit {
