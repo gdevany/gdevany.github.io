@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: grey;
+  color: black;
 }
 
 .row {
@@ -18,43 +18,6 @@ a {
   width: 100%;
   /*border: solid rgba(128, 128, 128, 0.2) 2px;*/
 }
-/*
-.sefont {
-  font-family: 'Special Elite';
-}
-
-.ptfont {
-  font-family: 'PT Mono';
-}
-
-.incfont {
-  font-family: 'Inconsolata', monospace;
-}
-
-.robofont {
-  font-family: 'Roboto Mono', monospace;
-}
-
-.scfont {
-  font-family: 'Source Code Pro', monospace;
-}
-
-.gracefont {
-  font-family: 'Covered By Your Grace', cursive;
-}
-
-.comingfont {
-  font-family: 'Coming Soon', cursive;
-}
-
-.nunitofont {
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-.jurafont {
-  font-family: 'Jura', sans-serif;
-  font-weight: 500;
-}*/
 
 .currentfont {
   font-family: 'Jura', sans-serif;
@@ -107,6 +70,10 @@ a {
 
 .grey {
   color: grey;
+}
+
+.red {
+  color: red;
 }
 
 .shadow {
@@ -186,6 +153,7 @@ a {
   /*max-width: 250px;*/
   width: 100%;
   height: 200px;
+  padding-bottom: 15px;
   margin-top: 30px;
   font-weight: bold;
   background-size: cover;
