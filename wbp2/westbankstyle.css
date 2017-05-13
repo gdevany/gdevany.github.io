@@ -18,7 +18,7 @@ a {
   width: 100%;
   /*border: solid rgba(128, 128, 128, 0.2) 2px;*/
 }
-
+/*
 .sefont {
   font-family: 'Special Elite';
 }
@@ -47,6 +47,30 @@ a {
   font-family: 'Coming Soon', cursive;
 }
 
+.nunitofont {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.jurafont {
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
+}*/
+
+.currentfont {
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
+  /*font-size: 45px;*/
+
+  /*font-family: 'Nunito Sans', sans-serif;*/
+  /*font-family: 'Coming Soon', cursive;*/
+  /*font-family: 'Covered By Your Grace', cursive;*/
+  /*font-family: 'Source Code Pro', monospace;*/
+  /*font-family: 'Roboto Mono', monospace;*/
+  /*font-family: 'Inconsolata', monospace;*/
+  /*font-family: 'PT Mono';*/
+
+}
+
 .itally {
   font-style: italic;
 }
@@ -65,6 +89,8 @@ a {
 
 .fade-bold {
   color: black;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .fade-none {
