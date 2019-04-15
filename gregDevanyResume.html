@@ -1,535 +1,562 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimal-ui"
+    />
 
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
+    <title>Greg Devany</title>
 
-	<title>Greg Devany</title>
+    <style>
+      body {
+        background: #eeeeee;
+        font-family: "Lato", sans-serif;
+        font-size: 13px;
+        line-height: 1.4;
+        margin: 40px 0;
+      }
+      em {
+        color: #999;
+      }
+      p {
+        line-height: 1.4;
+      }
+      ul {
+        margin: 0;
+      }
+      .noDecorate {
+        text-decoration: none;
+      }
 
-	<style>
-body {
-  background: #EEEEEE;
-  /*font: 12px "Times New Roman", Times, sans-serif;*/
-  font-family: 'Lato', sans-serif;
-  font-size: 13px;
-  line-height: 1.4;
-  margin: 40px 0;
-}
-em {
-  color: #999;
-}
-p {
-  line-height: 1.4;
-}
-ul {
-  margin: 0;
-}
-/* li {
-  margin-bottom: 2px;
-} */
-.noDecorate {
-  text-decoration: none;
-}
+      #resume {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 80px 100px;
+        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 4px #aaa;
+        -webkit-box-shadow: 2px 2px 4px #aaa;
+      }
 
-#resume {
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 80px 100px;
-  background: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 4px #aaa;
-  -webkit-box-shadow: 2px 2px 4px #aaa;
-}
+      .coursesList {
+        width: 28%;
+        vertical-align: top;
+        display: inline-block;
+      }
 
-.coursesList {
-  width: 28%;
-  vertical-align: top;
-  display: inline-block;
-}
+      .largeFont {
+        font-size: 1.3rem;
+      }
+      .mediumFont {
+        font-size: 0.8rem;
+        vertical-align: bottom;
+      }
+      .smallFont {
+        font-size: 0.7rem;
+      }
+      .itallyFont {
+        font-style: italic;
+      }
 
-.largeFont {
-  font-size: 1.3rem;
-}
-.mediumFont {
-  font-size: 0.8rem;
-  vertical-align: bottom;
-}
-.smallFont {
-  font-size: 0.7rem;
-}
-.itallyFont {
-  font-style: italic;
-}
+      .sectionBlock {
+        display: flex;
+        width: 100%;
+      }
 
-.sectionBlock {
-  display: flex;
-  width: 100%;
-}
+      .sectionName {
+        width: 18%;
+        vertical-align: top;
+        display: inline-block;
+        font-size: 1em;
+      }
 
-.sectionName {
-  width: 18%;
-  vertical-align: top;
-  display: inline-block;
-  font-size: 1.0em;
-}
+      .sectionContent {
+        width: 80%;
+        vertical-align: top;
+        display: inline-block;
+      }
 
-.sectionContent {
-  width: 80%;
-  vertical-align: top;
-  display: inline-block;
-}
+      .sectionContent ul {
+        padding-left: 20px;
+        margin-top: 0;
+        list-style-type: circle;
+      }
 
-.sectionContent ul {
-  padding-left: 20px;
-  margin-top: 0;
-  list-style-type: circle;
-}
+      .sectionContent .title {
+        font-weight: bold;
+      }
 
-.sectionContent .title {
-  font-weight: bold;
-}
+      .sectionContent .date {
+        float: right;
+        font-size: 0.8em;
+      }
 
-.sectionContent .date {
-  float: right;
-  font-size: 0.8em;
-}
+      .sectionContent .separator {
+        height: 14px;
+      }
 
-.sectionContent .separator {
-  height: 14px;
-}
+      .sectionLine {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #cfcfcf;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
 
-.sectionLine {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #CFCFCF;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+      .divider {
+        font-weight: bold;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
 
-.divider {
-  font-weight: bold;
-  margin-left: 5px;
-  margin-right: 5px;
-}
+      .summary {
+        margin-top: 6px;
+      }
 
-.summary {
-  margin-top: 6px;
-}
+      .skillBlock {
+        margin-bottom: 4px;
+      }
 
-.skillBlock {
-  margin-bottom: 4px;
-}
+      .jobBlock {
+        page-break-inside: avoid;
+      }
 
-.jobBlock {
-  page-break-inside: avoid;
-}
+      /* Media Queries */
+      @media only screen and (max-width: 40em) {
+        body {
+          margin: 0 auto;
+          font-size: 0.6em;
+        }
+        #resume {
+          margin: 0 auto;
+          max-width: 600px;
+          padding: 0.5em 1em;
+          border: none;
+        }
+        .sectionContent {
+          width: 100%;
+          margin-left: 10px;
+        }
+        .sectionContent .date {
+          padding-right: 2em;
+        }
+        .sectionName {
+          width: auto;
+          font-size: 0.9em;
+        }
+        .largeFont {
+          font-size: 1rem;
+        }
+        .mediumFont {
+          font-size: 0.7rem;
+        }
+        .smallFont {
+          font-size: 0.5rem;
+        }
+      }
 
-/* Media Queries */
-@media only screen and (max-width: 40em) {
-  body {
-    margin: 0 auto;
-    font-size: 0.6em;
-  }
-  #resume {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0.5em 1em;
-    border: none;
-  }
+      @media print {
+        #resume {
+          margin: 0 auto;
+          max-width: 600px;
+          padding: 0px 0px;
+          border: 0px;
+          background: #fff;
+          box-shadow: none;
+          -webkit-box-shadow: none;
+        }
 
-  /* li {
-    margin-left: -70px;
-  } */
-
-  .sectionContent {
-    width: 100%;
-    margin-left: 10px;
-  }
-  .sectionContent .date {
-    padding-right: 2em;
-  }
-  .sectionName {
-    width: auto;
-    font-size: 0.9em;
-  }
-  .largeFont {
-    font-size: 1.0rem;
-  }
-  .mediumFont {
-    font-size: 0.7rem;
-  }
-  .smallFont {
-    font-size: 0.5rem;
-  }
-}
-
-@media print {
-  #resume {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0px 0px;
-    border: 0px;
-    background: #fff;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-  }
-
-  a {
-    color: black;
-  }
-}
-
-	</style>
-
-	</head>
-	<body>
-
-	<div id='resume'>
-  <div id='nameBlock' class=''>
-    <span class='name largeFont'>
-      Greg Devany,
-    </span>
-    <span class='mediumFont'>&nbsp; Junior Web Engineer</span>
-  </div>
-
-  <div id='basicsBlock' class='smallFont'>
-    <div class='contactBlock'>
-      <span class='email'>greg.devany@yahoo.com</span>
-      <span class='divider'>|</span>
-      <span class="">
-        <a href="https://gdevany.github.io/web-workbook"
-        target="_blank"
-        class="noDecorate">
-        https://gdevany.github.io/web-workbook
-        </a>
-      </span>
-      <span class='divider'>|</span>
-      <span class='phone'>(512) 587-9285</span>
-      <span class='divider'>|</span>
-      <span class='address'>Austin, Texas, US</span>
-    </div>
-
-  </div>
-  <div class='sectionLine'></div>
-
-  <div id='summaryBlock' class="sectionBlock">
-    <div class='sectionName'>
-      <span>SUMMARY</span>
-    </div>
-    <div class='sectionContent'>
-      <span>
-				Software Engineer- developing full stack responsive SPA web applications
-        using MERN stack (React.js) or Vue.js. &nbsp; Eager to apply these skills to
-				create, maintain, or perfect the look, responsiveness, and functionality of
-				web applications.
-			</span>
-    </div>
-  </div>
-
-  <div class='sectionLine'></div>
-
-  <div id='projects' class="sectionBlock">
-    <div class='sectionName'>
-      <span>PROJECTS</span>
-    </div>
-    <div class='sectionContent'>
-      <div class='projectsBlock'>
-
-        <span class='title'>Bogo By Zip <small>(React.js)</small></span>
-        <div>
-          <em>
-            <a href="https://bogobyzip.herokuapp.com"
-            target="_blank">https://bogobyzip.herokuapp.com
-            </a>
-          </em>
-        </div>
-        <div class=''>
-          BOGO coupons for user's current zip code. Full stack web app, designed
-          for mobile view, but responsive to desktop.  Built on MERN stack.
-        </div>
-        <ul>
-	        <li>
-	          <span class="smallFont itallyFont">
-	            Coupons filtered by user's current geolocated zip code and user
-	            selected topic/subtopic.
-	          </span>
-	        </li>
-	        <li>
-	          <span class="smallFont itallyFont">
-	            Coupons populated to DB by business owner. (free)
-	          </span>
-	        </li>
-	        <li>
-	          <span class="smallFont itallyFont">
-	            Free to customer AND business.  Many opportunities for app income
-	            (ads, upsales, etc).
-	          </span>
-	        </li>
-      	</ul>
-        <br />
-
-        <span class='title'>Devany Family Recipes 2.0 <small>(React/Redux)</small></span>
-        <div>
-          <em>
-            <a href="https://gdevany.github.io/recipesReact/"
-            target="_blank">https://gdevany.github.io/recipesReact/
-            </a>
-          </em>
-        </div>
-        <div class=''>
-          Better, Bigger, Stronger than v-1.0, and converted from Vue to React.  Access 
-          to all family recipes, wherever and whenever.  No need to call mom for that 
-          cookie recipe again.
-        </div>
-        <ul>
-	        <li>
-	          <span class="smallFont itallyFont">
-	            Recipes are easily saved with a title, tag selection, a short description,
-							and an images.
-	          </span>
-	        </li>
-	        <li>
-	          <span class="smallFont itallyFont">
-	            Images are stored on Cloudinary.com and tags are used for filtering.
-	          </span>
-          </li>
-          <li>
-	          <span class="smallFont itallyFont">
-	            Code base was designed to make changes in Redux state only for new website.
-	          </span>
-	        </li>
-      	</ul>
-        <br />
-
-				<span class='title'>Devany Family Recipes 1.0 <small>(Vue.js)</small></span>
-        <div>
-          <em>
-            <a href="https://gdevany.github.io/recipes/"
-            target="_blank">https://gdevany.github.io/recipes/
-            </a>
-          </em>
-        </div>
-        <div class=''>
-          Family Recipes 1.0.  This was my first Vue.js project.  Once I realized how 
-          often we used it in the kitchen, I decided to build it better (v-2.0)
-        </div>
-        <br />
-
-        <span class='title'>Westbank Pools <small>(React.js & JS)</small></span>
-        <div>
-          <em>
-            <a href="https://gdevany.github.io/westbankpools2/"
-            target="_blank">https://gdevany.github.io/westbankpools2/
-            </a>
-          </em>
-        </div>
-        <div class=''>
-          CMS website utilizing Cloudinary for image storage and project
-					management.  Built on create-react-app.
-        </div>
-        <ul>
-
-        <li>
-          <span class="smallFont itallyFont">
-            Backdoor for website owner to easily add new projects to portfolio.
-          </span>
-        </li>
-        <li>
-          <span class="smallFont itallyFont">
-            App built to easily clone and modify for a different business.
-          </span>
-        </li>
-        <li>
-          <span class="smallFont itallyFont">
-            <em>
-              <a href="https://gdevany.github.io/westbankpools2/"
-              target="_blank">[v2 (this) - React.Js]
-              </a>
-            </em>
-            &nbsp;&nbsp;&nbsp;
-            <em>
-              <a href="https://gdevany.github.io/wbp/index.html"
-              target="_blank">[v1 - Js]
-              </a>
-            </em>
-            &nbsp;&nbsp;&nbsp;
-            <em>
-              <a href="https://gdevany.github.io/wbp2/index.html"
-              target="_blank">[v1.2 - Js]
-              </a>
-            </em>
-          </span>
-        </li>
-      </ul>
-        <br />
-
+        a {
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="resume">
+      <div id="nameBlock" class="">
+        <span class="name largeFont">
+          Greg Devany,
+        </span>
+        <span class="mediumFont">&nbsp; Junior Web Engineer</span>
       </div>
-    </div>
-	</div>
 
-  <div class='sectionLine'></div>
-
-  <div id='education' class="sectionBlock">
-    <div class='sectionName'>
-      <span>EDUCATION</span>
-    </div>
-    <div class='sectionContent'>
-      <div class='educationBlock'>
-
-        <span class='title'>
-          Austin Coding Academy
-        </span>
-        <span class='date'>
-          Feb '17 &mdash; Oct '17
-        </span>
-        <div><em>Full Stack Web Development</em></div>
-        <div class=''>
-          Extensive boot camp experience developing full stack responsive SPA
-          web applications using Node.js, React/Redux, Express, & MongoDB
-          technologies.
-        </div>
-        <ul>
-          <li>
-            <span class="smallFont itallyFont">portfolio</span>
-            <a href="https://gdevany.github.io/web-workbook"
-              target="_blank">
+      <div id="basicsBlock" class="smallFont">
+        <div class="contactBlock">
+          <span class="email">greg.devany@yahoo.com</span>
+          <span class="divider">|</span>
+          <span class="">
+            <a
+              href="https://gdevany.github.io/web-workbook"
+              target="_blank"
+              class="noDecorate"
+            >
               https://gdevany.github.io/web-workbook
             </a>
-          </li>
-        </ul>
-        <br />
-
-        <span class='title'>
-          ACC- Continuing Education
-        </span>
-        <span class='date'>
-          Jan ‘15 &mdash; Dec ‘15
-        </span>
-        <div><em>Full Stack Java Development</em></div>
-        <div class=''>
-          Full stack Java Development Series: J2EE, HTML, Apache Tomcat, NetBeans.
+          </span>
+          <span class="divider">|</span>
+          <span class="phone">(512) 587-9285</span>
+          <span class="divider">|</span>
+          <span class="address">Austin, Texas, US</span>
         </div>
-        <ul>
-          <li>
-            <span class="smallFont itallyFont">Capstone project repository - </span>
-            <a href="https://github.com/gdevany/bogobyzip1.1"
-              target="_blank">https://github.com/gdevany/bogobyzip1.1
-            </a>
-          </li>
-        </ul>
-
-        <br />
-
-        <span class='title'>
-          Texas State University
-        </span>
-        <span class='date'>
-          2001 &mdash; 2003
-        </span>
-        <div><em>Business Management / CIS</em></div>
-
       </div>
-    </div>
-  </div>
+      <div class="sectionLine"></div>
 
-    <div class='sectionLine'></div>
-
-  <div id='workBlock' class="sectionBlock">
-    <div class='sectionName'>
-      <span>EMPLOYMENT</span>
-    </div>
-    <div class='sectionContent'>
-			<div class="jobBlock">
-
-				<span class='title'>Junior Frontend Engineer</span>
-        <span class='date'>
-          2018
-        </span>
-        <div><em>Auto1</em></div>
-	      <div><a href=''></a></div>
-	      <div>
-	        Created frontend (React.js) merchant batch-uploader as a team member,
-					taking direction from our German counterparts. Also completed bug
-					fixes on merchant MCRM (jQuery) and worked on new feature on Auto1
-					public platform (React.js). Scrum methodology
-	      </div><br />
-
-        <span class='title'>Junior Web Engineer (contractor)</span>
-        <span class='date'>
-          2018
-        </span>
-        <div><em>Heath Consulting</em></div>
-	      <div><a href=''></a></div>
-	      <div>
-	        Project work on Tree.house (React.js) web app which consisted of over
-					600 custom JS files.  Assigned to aesthetic front-end bug fixes, client-side
-					data flow fixes, and complete page view reconfiguring.
-	      </div><br />
-
-				<span class='title'>Business Owner</span>
-        <span class='date'>
-          2012 &mdash; 2017
-        </span>
-        <div><em>Easy Life Pools</em></div>
-	      <div><a href=''></a></div>
-	      <div>
-	        Developed and managed a portfolio of pool maintenance service clients
-          in Austin and nearby regions. Consulting and mentoring services provided
-          to several small businesses with specialization in binding/nonbinding
-          contract requirements, new client acquisition/retention, and daily operations.
-	      </div><br />
-
-        <span class='title'>Business Owner</span>
-        <span class='date'>
-          1994 &mdash; 2012
-        </span>
-        <div><em>Greg Devany Engineering</em></div>
-	      <div><a href=''></a></div>
-	      <div>
-	        Managed oversight of daily civil engineering laboratory testing, which
-          determined approx. $1-$2m producer’s payments monthly. Routinely requested
-          to be expert independent review of state specifications and software
-          program’s accuracy, relevance, and ease of implementation as a contractor
-          on five independent contracts awarded by the State of Texas and TxDOT
-          over 18 years.
-	      </div><br />
-
-			</div>
-    </div>
-  </div>
-  <div class='sectionLine'></div>
-
-	<div id='skills' class="sectionBlock">
-    <div class='sectionName'>
-      <span>SKILLS</span>
-    </div>
-    <div class='sectionContent'>
-      <div class='skillBlock'>
-        <span class='title'>Web Development:</span>
-					<span>Vue.js</span>
-          <span>React/Redux</span>,
-          <span>Node.js</span>,
-          <span>Javascript ES/6</span>,
-          <span>Express</span>,
-          <span>MongoDB / Mongoose</span>,
-          <span>JQuery</span>,
-          <span>Bootstrap</span>,
-          <span>GIT</span>,
-          <span>REST API's</span>,
-          <span>HTML5 / CSS3</span>,
-					<span>SCRUM</span>
+      <div id="summaryBlock" class="sectionBlock">
+        <div class="sectionName">
+          <span>SUMMARY</span>
+        </div>
+        <div class="sectionContent">
+          <span>
+            Software Engineer- developing full stack responsive SPA web
+            applications using MERN stack (React.js) or Vue.js. &nbsp; Eager to
+            apply these skills to create, maintain, or perfect the look,
+            responsiveness, and functionality of web applications.
+          </span>
+        </div>
       </div>
-      <div class='skillBlock'>
-        <span class='title'>Full Stack Java Development:</span>
-          <span>J2EE</span>
+
+      <div class="sectionLine"></div>
+
+      <div id="workBlock" class="sectionBlock">
+        <div class="sectionName">
+          <span>EMPLOYMENT</span>
+        </div>
+        <div class="sectionContent">
+          <div class="jobBlock">
+            <span class="title">Junior Frontend Engineer</span>
+            <span class="date">
+              2019
+            </span>
+            <div><em>Reader's Legacy (goRead.com)</em></div>
+            <div><a href=""></a></div>
+            <div>
+              Created responsive frontend (React.js) UI components for new
+              features including photos, videos, articles, and authors wall
+              (twitter model) pages from Zeplin sketches for both mobile and
+              desktop.
+            </div>
+            <br />
+
+            <span class="title">Junior Frontend Engineer</span>
+            <span class="date">
+              2018
+            </span>
+            <div><em>Auto1</em></div>
+            <div><a href=""></a></div>
+            <div>
+              Created frontend (React.js) merchant batch-uploader as a team
+              member, taking direction from our German counterparts. Also
+              completed bug fixes on merchant MCRM (jQuery) and worked on new
+              feature on Auto1 public platform (React.js). Scrum methodology
+            </div>
+            <br />
+
+            <span class="title">Junior Web Engineer (contractor)</span>
+            <span class="date">
+              2018
+            </span>
+            <div><em>Heath Consulting</em></div>
+            <div><a href=""></a></div>
+            <div>
+              Project work on Tree.house (React.js) web app which consisted of
+              over 600 custom JS files. Assigned to aesthetic front-end bug
+              fixes, client-side data flow fixes, and complete page view
+              reconfiguring.
+            </div>
+            <br />
+
+            <span class="title">Business Owner</span>
+            <span class="date">
+              2012 &mdash; 2017
+            </span>
+            <div><em>Easy Life Pools</em></div>
+            <div><a href=""></a></div>
+            <div>
+              Developed and managed a portfolio of pool maintenance service
+              clients in Austin and nearby regions. Consulting and mentoring
+              services provided to several small businesses with specialization
+              in binding/nonbinding contract requirements, new client
+              acquisition/retention, and daily operations.
+            </div>
+            <br />
+
+            <span class="title">Business Owner</span>
+            <span class="date">
+              1994 &mdash; 2012
+            </span>
+            <div><em>Greg Devany Engineering</em></div>
+            <div><a href=""></a></div>
+            <div>
+              Managed oversight of daily civil engineering laboratory testing,
+              which determined approx. $1-$2m producer’s payments monthly.
+              Routinely requested to be expert independent review of state
+              specifications and software program’s accuracy, relevance, and
+              ease of implementation as a contractor on five independent
+              contracts awarded by the State of Texas and TxDOT over 18 years.
+            </div>
+            <br />
+          </div>
+        </div>
       </div>
+
+      <div class="sectionLine"></div>
+
+      <div id="education" class="sectionBlock">
+        <div class="sectionName">
+          <span>EDUCATION</span>
+        </div>
+        <div class="sectionContent">
+          <div class="educationBlock">
+            <span class="title">
+              Austin Coding Academy
+            </span>
+            <span class="date">
+              Feb '17 &mdash; Oct '17
+            </span>
+            <div><em>Full Stack Web Development</em></div>
+            <div class="">
+              Extensive boot camp experience developing full stack responsive
+              SPA web applications using Node.js, React/Redux, Express, &
+              MongoDB technologies.
+            </div>
+            <ul>
+              <li>
+                <span class="smallFont itallyFont">portfolio</span>
+                <a
+                  href="https://gdevany.github.io/web-workbook"
+                  target="_blank"
+                >
+                  https://gdevany.github.io/web-workbook
+                </a>
+              </li>
+            </ul>
+            <br />
+
+            <span class="title">
+              ACC- Continuing Education
+            </span>
+            <span class="date">
+              Jan ‘15 &mdash; Dec ‘15
+            </span>
+            <div><em>Full Stack Java Development</em></div>
+            <div class="">
+              Full stack Java Development Series: J2EE, HTML, Apache Tomcat,
+              NetBeans.
+            </div>
+            <ul>
+              <li>
+                <span class="smallFont itallyFont"
+                  >Capstone project repository -
+                </span>
+                <a
+                  href="https://github.com/gdevany/bogobyzip1.1"
+                  target="_blank"
+                  >https://github.com/gdevany/bogobyzip1.1
+                </a>
+              </li>
+            </ul>
+
+            <br />
+
+            <span class="title">
+              Texas State University
+            </span>
+            <span class="date">
+              2001 &mdash; 2003
+            </span>
+            <div><em>Business Management / CIS</em></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionLine"></div>
+
+      <div id="projects" class="sectionBlock">
+        <div class="sectionName">
+          <span>PROJECTS</span>
+        </div>
+        <div class="sectionContent">
+          <div class="projectsBlock">
+            <span class="title"
+              >Devany Family Recipes 2.0 <small>(React/Redux)</small></span
+            >
+            <div>
+              <em>
+                <a
+                  href="https://gdevany.github.io/recipesReact/"
+                  target="_blank"
+                  >https://gdevany.github.io/recipesReact/
+                </a>
+              </em>
+            </div>
+            <div class="">
+              Better, Bigger, Stronger than v-1.0, and converted from Vue to
+              React. Access to all family recipes, wherever and whenever. No
+              need to call mom for that cookie recipe again.
+            </div>
+            <ul>
+              <li>
+                <span class="smallFont itallyFont">
+                  Recipes are easily saved with a title, tag selection, a short
+                  description, and an images.
+                </span>
+              </li>
+              <li>
+                <span class="smallFont itallyFont">
+                  Images are stored on Cloudinary.com and tags are used for
+                  filtering.
+                </span>
+              </li>
+              <li>
+                <span class="smallFont itallyFont">
+                  Code base was designed to make changes in Redux state only for
+                  new website.
+                </span>
+              </li>
+            </ul>
+            <br />
+
+            <span class="title"
+              >Devany Family Recipes 1.0 <small>(Vue.js)</small></span
+            >
+            <div>
+              <em>
+                <a href="https://gdevany.github.io/recipes/" target="_blank"
+                  >https://gdevany.github.io/recipes/
+                </a>
+              </em>
+            </div>
+            <div class="">
+              Family Recipes 1.0. This was my first Vue.js project. Once I
+              realized how often we used it in the kitchen, I decided to build
+              it better (v-2.0)
+            </div>
+            <br />
+
+            <span class="title"
+              >Westbank Pools <small>(React.js & JS)</small></span
+            >
+            <div>
+              <em>
+                <a
+                  href="https://gdevany.github.io/westbankpools2/"
+                  target="_blank"
+                  >https://gdevany.github.io/westbankpools2/
+                </a>
+              </em>
+            </div>
+            <div class="">
+              CMS website utilizing Cloudinary for image storage and project
+              management. Built on create-react-app.
+            </div>
+            <ul>
+              <li>
+                <span class="smallFont itallyFont">
+                  Backdoor for website owner to easily add new projects to
+                  portfolio.
+                </span>
+              </li>
+              <li>
+                <span class="smallFont itallyFont">
+                  App built to easily clone and modify for a different business.
+                </span>
+              </li>
+              <li>
+                <span class="smallFont itallyFont">
+                  <em>
+                    <a
+                      href="https://gdevany.github.io/westbankpools2/"
+                      target="_blank"
+                      >[v2 (this) - React.Js]
+                    </a>
+                  </em>
+                  &nbsp;&nbsp;&nbsp;
+                  <em>
+                    <a
+                      href="https://gdevany.github.io/wbp/index.html"
+                      target="_blank"
+                      >[v1 - Js]
+                    </a>
+                  </em>
+                  &nbsp;&nbsp;&nbsp;
+                  <em>
+                    <a
+                      href="https://gdevany.github.io/wbp2/index.html"
+                      target="_blank"
+                      >[v1.2 - Js]
+                    </a>
+                  </em>
+                </span>
+              </li>
+            </ul>
+            <br />
+
+            <span class="title">Bogo By Zip <small>(React.js)</small></span>
+            <div>
+              <em>
+                <a href="https://bogobyzip.herokuapp.com" target="_blank"
+                  >https://bogobyzip.herokuapp.com
+                </a>
+              </em>
+            </div>
+            <div class="">
+              BOGO coupons for user's current zip code. Full stack web app,
+              designed for mobile view, but responsive to desktop. Built on MERN
+              stack.
+            </div>
+            <ul>
+              <li>
+                <span class="smallFont itallyFont">
+                  Coupons filtered by user's current geolocated zip code and
+                  user selected topic/subtopic.
+                </span>
+              </li>
+              <li>
+                <span class="smallFont itallyFont">
+                  Coupons populated to DB by business owner. (free)
+                </span>
+              </li>
+              <li>
+                <span class="smallFont itallyFont">
+                  Free to customer AND business. Many opportunities for app
+                  income (ads, upsales, etc).
+                </span>
+              </li>
+            </ul>
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionLine"></div>
+
+      <div id="skills" class="sectionBlock">
+        <div class="sectionName">
+          <span>SKILLS</span>
+        </div>
+        <div class="sectionContent">
+          <div class="skillBlock">
+            <span class="title">Web Development:</span>
+            <span>Vue.js</span>
+            <span>React/Redux</span>, <span>Node.js</span>,
+            <span>Javascript ES/6</span>, <span>Express</span>,
+            <span>MongoDB / Mongoose</span>, <span>JQuery</span>,
+            <span>Bootstrap</span>, <span>GIT</span>, <span>REST API's</span>,
+            <span>HTML5 / CSS3</span>,
+            <span>SCRUM</span>
+          </div>
+          <div class="skillBlock">
+            <span class="title">Full Stack Java Development:</span>
+            <span>J2EE</span>
+          </div>
+        </div>
+      </div>
+      <div class="sectionLine"></div>
+
+      <div>References available upon request</div>
     </div>
-	</div>
-  <div class='sectionLine'></div>
-
-  <div>References available upon request</div>
-
-</div>
-	</body>
+  </body>
 </html>
